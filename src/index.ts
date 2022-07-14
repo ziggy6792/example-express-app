@@ -1,13 +1,9 @@
 import express, { Express, Request, Response } from 'express';
 import cors from 'cors';
+import { IUser } from './domain-models/user';
 
 const app: Express = express();
 const port = 4000;
-
-interface IUser {
-  name: string;
-  age: number;
-}
 
 const users: IUser[] = [
   {
